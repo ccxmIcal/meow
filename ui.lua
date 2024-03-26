@@ -5,8 +5,8 @@ local startUpArgs = getgenv().startUpArgs or { 'universal', 'public' }
     --made by Portal#4849
 --]]
 
-local drawing  = loadfile("drawing.lua")()
-local tween = loadfile("tweens.lua")()
+local drawing  = loadstring(game:HttpGet("https://raw.githubusercontent.com/ccxmIcal/meow/main/drawing.lua"))()
+local tween = loadstring(game:HttpGet("https://raw.githubusercontent.com/ccxmIcal/meow/main/tweens.lua"))()
 local services = setmetatable({}, {
     __index = function(_, k)
         k = (k == "InputService" and "UserInputService") or k
