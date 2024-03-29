@@ -6250,5 +6250,4 @@ function library:createwatermark(info)
     watermark.setstate(false)
     return watermark
 end
-getgenv().library = library
 return library;
