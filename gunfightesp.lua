@@ -110,12 +110,6 @@ function esp:checkvisible(instance, origin, params)
     return (hit and hit.Instance:IsDescendantOf(instance)) and true or false
 end
 
-for i,v in next, getnilinstances() do
-    if v.ClassName == "Player" then
-        print(i,v)
-    end
-end
-
 function esp:check(plr)
 	if plr == players.LocalPlayer then return false; end;
 	local pass = true;
