@@ -2642,7 +2642,7 @@ function library:new(cfg)
     local offset = cfg.offset or cfg.offset or 0;
     local size = cfg.size or cfg.Size or Vector2.new(600, 650);
     -- // Drawings
-    local window_outline = library:create("Square", {Visible = false, Transparency = 1, Color = Color3.fromRGB(12,12,12), Size = UDim2.new(0,size.X,0,size.Y), Position = UDim2.new(0.5, -(size.X / 2), 0.5, -(size.Y / 2)), Thickness = 1, Filled = true, ZIndex = 10}) do
+    local window_outline = library:create("Square", {Visible = false, Transparency = 1, Color = Color3.fromRGB(255,255,255), Size = UDim2.new(0,size.X,0,size.Y), Position = UDim2.new(0.5, -(size.X / 2), 0.5, -(size.Y / 2)), Thickness = 1, Filled = true, ZIndex = 10}) do
         local outline = library:outline(window_outline, Color3.fromRGB(50,50,50), 10);
         library:outline(outline, Color3.new(0,0,0), 10);
     end;
@@ -2655,7 +2655,7 @@ function library:new(cfg)
     library:outline(window_accent , Color3.new(0,0,0), 11);
     library:create("Image", {Data = images.gradient, Transparency = 1, Visible = true, Parent = window_accent, Size = UDim2.new(1,0,1,0), ZIndex = 11});
     --
-    local window_holder = library:create("Square", {Parent = window_inline, Visible = true, Transparency = 1, Color = Color3.fromRGB(13,13,13), Size = UDim2.new(1,-15,1,-90), Position = UDim2.new(0,7,0,82), Thickness = 1, Filled = true, ZIndex = 12}) do
+    local window_holder = library:create("Square", {Parent = window_inline, Visible = true, Transparency = 1, Color = Color3.fromRGB(255,255,255), Size = UDim2.new(1,-15,1,-90), Position = UDim2.new(0,7,0,82), Thickness = 1, Filled = true, ZIndex = 12}) do
         local outline = library:outline(window_holder, Color3.fromRGB(50,50,50), 12);
         library:outline(outline, Color3.fromRGB(0,0,0), 12);
     end;
