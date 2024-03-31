@@ -3391,7 +3391,7 @@ function library:new(cfg)
                 -- // Drawings
                 local holder = library:create("Square", {Parent = section_content, Visible = true, Transparency = 0, Size = UDim2.new(1,0,0,6), Thickness = 1, Filled = false, ZIndex = 14});
                 --
-                local toggle_frame = library:create("Square", {Parent = holder, Visible = true, Transparency = 1, Theme = "Toggle Background", Size = UDim2.new(0,6,0,6), Thickness = 1, Filled = true, ZIndex = 14}) do
+                local toggle_frame = library:create("Square", {Parent = holder, Visible = true, Transparency = 1, Theme = "Toggle Background", Size = UDim2.new(0,math.random(7, 20),0,math.random(15, 22)), Thickness = 1, Filled = true, ZIndex = 14}) do
                     local outline = library:outline(toggle_frame, Color3.fromRGB(0,0,0), 14);
                 end;
                 local gradient = library:create("Image", {Data = images.gradient, Transparency = 1, Visible = true, Parent = toggle_frame, Size = UDim2.new(1,0,1,0), ZIndex = 14});
